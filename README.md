@@ -1,4 +1,5 @@
-# 本公司所有SDK的依赖库
+# 本公司所有SDK的依赖库  
+## 实例代码请切换仓库到对应分支
 
 # 使用方法
 project build.graddle

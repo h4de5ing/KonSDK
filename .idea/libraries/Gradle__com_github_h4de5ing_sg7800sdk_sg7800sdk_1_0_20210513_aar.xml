@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.h4de5ing.sg7800sdk:sg7800sdk:1.0-20210513@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c8d8d5b5cc57e58fb5d25bc07f4744f7/sg7800sdk-1.0-20210513/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f0ce7664ea46b3318540b727b310ee87/sg7800sdk-1.0-20210513/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f0ce7664ea46b3318540b727b310ee87/sg7800sdk-1.0-20210513/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f0ce7664ea46b3318540b727b310ee87/sg7800sdk-1.0-20210513/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
