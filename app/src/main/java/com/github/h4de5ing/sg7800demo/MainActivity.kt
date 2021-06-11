@@ -1,7 +1,12 @@
 package com.github.h4de5ing.sg7800demo
 
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
+import android.util.Log
 import com.github.h4de5ing.sg7800sdk.SDKTemBaseActivity
 import com.github.h4de5ing.sg7800sdk.SPUtils
 import kotlinx.android.synthetic.main.activity_main.*
@@ -50,5 +55,23 @@ class MainActivity : SDKTemBaseActivity() {
                 tv.scrollTo(0, if (offset > 0) offset else 0)
             }
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val intentFilter = IntentFilter()
+        val action = "com.rfid.SCAN"
+        val data = "data"
+        intentFilter.addAction(action)
+        registerReceiver(object : BroadcastReceiver() {
+            override fun onReceive(context: Context, intent: Intent) {
+                if (action == intent.action) {
+                    var data = intent.getByteArrayExtra(data)
+                    data?.apply {
+                        Log.d("scan", "scanQrCode = [${String(this)}]")
+                    }
+                }
+            }
+        }, intentFilter)
     }
 }

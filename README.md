@@ -51,7 +51,7 @@ data:data
                 if (action == intent.action) {
                     var data = intent.getByteArrayExtra(data)
                     data?.apply {
-                        Log.d("scan", "scanQrCode = [$this]")
+                        Log.d("scan", "scanQrCode = [${String(this)}]")
                     }
                 }
             }
